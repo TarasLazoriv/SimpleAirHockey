@@ -1,4 +1,4 @@
 ﻿namespace SimpleAirHockey.Runtime
 {
-    public interface IInputMovable : IValue<bool>, IInputMovableReadonly { }
+    public interface IInputMovable : IValueObservable<bool>, IInputMovableReadonlyObservable { }
 }

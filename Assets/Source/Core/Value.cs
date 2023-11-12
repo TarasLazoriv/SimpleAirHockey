@@ -1,4 +1,6 @@
-﻿namespace SimpleAirHockey.Runtime
+﻿using System.Linq;
+
+namespace SimpleAirHockey.Runtime
 {
     public abstract class Value<T> : IValue<T>
     {

@@ -26,8 +26,14 @@ namespace SimpleAirHockey.Runtime
                 .AsSingle();
 
             Container
-                .Bind<IInputMovableReadonly>()
+                .Bind<IInputMovableReadonlyObservable>()
                 .To<IInputMovable>()
+                .FromResolve()
+                .AsSingle();
+
+            Container
+                .Bind<IInputMovableReadonly>()
+                .To<IInputMovableReadonlyObservable>()
                 .FromResolve()
                 .AsSingle();
 
@@ -36,6 +42,6 @@ namespace SimpleAirHockey.Runtime
 
         // ReSharper disable  ClassNeverInstantiated.Local
         private sealed class InputHitPositionState : Value<Vector3>, IInputHit { }
-        private sealed class InputHitMovableState : Value<bool>, IInputMovable { }
+        private sealed class InputHitMovableState : ValueObservable<bool>, IInputMovable { }
     }
 }

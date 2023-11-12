@@ -419,6 +419,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 659328486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &834807685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834807686}
+  - component: {fileID: 834807687}
+  m_Layer: 0
+  m_Name: UserPaddleControlObserver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834807686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834807685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413138599}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834807687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834807685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fde5dc320e6aa4b8934907b8a50580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_paddleMaterials: {fileID: 2100000, guid: 480f080c5d986764bb773bddfe363777, type: 2}
 --- !u!1 &1370527965
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,6 +634,7 @@ Transform:
   m_Children:
   - {fileID: 1724978228}
   - {fileID: 409848485}
+  - {fileID: 834807686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1668423917
@@ -599,6 +645,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2030297901220718898, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef996936cb8bd6e4a942a29d78a86c38, type: 2}
     - target: {fileID: 2236962714827124623, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.1
@@ -639,10 +689,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2647138037398765701, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ee6ed0cd7d5f14f91853a33a12ca61, type: 2}
     - target: {fileID: 3686446804165208452, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
       propertyPath: m_Name
       value: Paddle-2
       objectReference: {fileID: 0}
+    - target: {fileID: 4670500992278537182, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14ee6ed0cd7d5f14f91853a33a12ca61, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -882,6 +940,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2030297901220718898, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 47674f29505f2c140880a97daf68ae5c, type: 2}
     - target: {fileID: 2236962714827124623, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.49
@@ -922,10 +984,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2647138037398765701, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 480f080c5d986764bb773bddfe363777, type: 2}
     - target: {fileID: 3686446804165208452, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
       propertyPath: m_Name
       value: Paddle-1
       objectReference: {fileID: 0}
+    - target: {fileID: 4670500992278537182, guid: 0105da6014d211e4899bcbfe367910d1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 480f080c5d986764bb773bddfe363777, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

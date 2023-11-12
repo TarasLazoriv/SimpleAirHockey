@@ -39,8 +39,7 @@ namespace SimpleAirHockey.Runtime
 
                 // Speed cannot be lower than m_inputMinimumSpeed
                 speedFactor = Math.Max(m_inputMinimumSpeed.Value, speedFactor);
-
-                Debug.LogError(m_inputSensitivity.Value * speedFactor);
+                
                 // Set the Rigidbody speed according to the sensitivity and distance dependency
                 Vector3 velocity = direction * m_inputSensitivity.Value * speedFactor;
 
