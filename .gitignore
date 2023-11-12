@@ -1,0 +1,66 @@
+# Unity generated #
+# =============== #
+Temp/
+Library/
+UIElementsSchema/
+Builds/
+.vs/
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+
+
+# ============ #
+# Rider generated #
+# ============ #
+.idea/
+Assets/Plugins/Editor/JetBrains
+Assets/Plugins/Editor/JetBrains.meta
+Assets/Plugins/Editor.meta
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Logs/Packages-Update.log
+
+Assets/Temp.meta
+Assets/Plugins/Android/*.aar
+Assets/Plugins/Android/*.aar.meta
+Assets/Plugins/Android/*.jar
+Assets/Plugins/Android/*.jar.meta
+!Assets/Plugins/Android/libmessaging_unity_player_activity.jar
+Android.meta
+Assets/Firebase/Plugins/link.xml
+Assets/Firebase/Plugins/link.xml.meta
+Assets/Firebase/Plugins/link.xml_DISABLED
+Assets/Firebase/Plugins/link.xml_DISABLED.meta
+Assets/StreamingAssets/google-services-desktop.json
+Assets/StreamingAssets/google-services-desktop.json.meta
+*.vsconfig
+/Logs/
+/UserSettings/*
+Assets/BuildAssets
+Assets/BuildAssets.meta
